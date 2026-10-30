@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ChronoVault</title>
+<link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">⏱</div>
+    <div>
+      <div class="title">ChronoVault</div>
+      <div class="sub">Local reference prototype · synthetic data</div>
+    </div>
+  </div>
+  <div class="actions">
+    <button id="btnScan" class="primary">Run scan</button>
+    <button id="btnReset" class="ghost">Reset vault</button>
+  </div>
+</header>
+<nav class="tabs" id="tabs">
+  <button data-view="overview" class="on">Overview</button>
+  <button data-view="timeline">Timeline</button>
+  <button data-view="vault">Vault</button>
+  <button data-view="review">Needs review</button>
+  <button data-view="digest">Action digest</button>
+  <button data-view="privacy">Privacy</button>
+</nav>
+<main>
+  <section id="view-overview" class="view on"></section>
+  <section id="view-timeline" class="view"></section>
+  <section id="view-vault" class="view"></section>
+  <section id="view-review" class="view"></section>
+  <section id="view-digest" class="view"></section>
+  <section id="view-privacy" class="view"></section>
+</main>
+<aside id="drawer" class="drawer" hidden></aside>
+<div id="modal" class="modal" hidden>
+  <div class="modal-card">
+    <h2>Scanning authorized folders</h2>
+    <ol id="scanLog" class="scan-log"></ol>
+    <div class="scan-bar"><div id="scanFill"></div></div>
+  </div>
+</div>
+<div id="toast" class="toast" hidden></div>
+<script>window.SCAN_PACE = 420;</script>
+<script src="/app.js"></script>
+</body>
+</html>

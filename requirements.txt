@@ -1,0 +1,6 @@
+# Runtime: reference prototype + dashboard (Python 3.10+)
+pypdf>=5.0
+rapidocr-onnxruntime>=1.2   # offline OCR for receipt photos (ONNX models ship with the wheel)
+reportlab>=4.0              # synthetic sample PDFs and the proposal PDF
+pillow>=10.0
+pytest>=8.0

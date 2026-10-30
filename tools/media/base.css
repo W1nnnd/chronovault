@@ -1,0 +1,6 @@
+:root { --g:#0f766e; --g2:#14b8a6; --ink:#0f172a; --muted:#64748b; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: "Segoe UI", system-ui, sans-serif; color: var(--ink); background:#f8fafc; }
+.frame { width:1500px; height:1000px; overflow:hidden; position:relative; }
+.logo { position:absolute; top:36px; right:48px; display:flex; gap:10px; align-items:center; font-weight:750; }
+.logo .mark { width:42px; height:42px; border-radius:50%; background:linear-gradient(135deg,#14b8a6,#0f766e); display:grid; place-items:center; color:white; }

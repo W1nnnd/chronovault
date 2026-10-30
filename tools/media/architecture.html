@@ -1,0 +1,52 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/><link rel="stylesheet" href="base.css"/>
+<style>
+.frame{background:white;padding:48px 56px;}
+h1{margin:0;font-size:36px;} .sub{color:var(--muted);margin:6px 0 28px;font-size:18px;}
+.box{border:2px dashed #99f6e4;border-radius:18px;padding:22px;position:relative;}
+.box > .lbl{position:absolute;top:-12px;left:18px;background:white;padding:0 8px;color:var(--g);font-weight:700;font-size:13px;}
+.row{display:grid;grid-template-columns:1.1fr 1.2fr 1.1fr 1.1fr;gap:14px;align-items:stretch;}
+.card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;padding:14px;}
+.card h3{margin:0 0 8px;font-size:14px;color:var(--g);}
+.card li{font-size:13px;margin:4px 0;color:#334155;}
+.pillar{background:#0f766e;color:white;border-radius:14px;padding:16px;}
+.pillar h3{margin:0 0 10px;}
+.pillar ol{margin:0;padding-left:18px;font-size:13px;line-height:1.45;}
+.feats{display:flex;gap:18px;margin-top:18px;font-size:13px;color:#334155;}
+.feats span::before{content:"✓ ";color:var(--g);font-weight:700;}
+.tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;background:#ccfbf1;color:#115e59;margin-left:6px;}
+.tag.appr{background:#fef3c7;color:#92400e;}
+</style></head><body><div class="frame">
+<div class="logo"><div class="mark">⏱</div>ChronoVault</div>
+<h1>How ChronoVault works on the NAS</h1>
+<div class="sub">One orchestration Skill · four registered UGOS experts · zero cloud calls.</div>
+<div class="box"><div class="lbl">UGREEN AI NAS · UGOS</div>
+<div class="row">
+  <div class="card"><h3>Authorized folders</h3><ul>
+    <li>PDF: Contracts, policies, leases</li><li>PDF: Invoices & bills</li>
+    <li>EML: Renewal emails</li><li>IMG: Receipt & warranty photos</li>
+    <li>TXT: Tax notices</li></ul>
+    <div style="font-size:12px;color:#64748b;margin-top:8px">Read-only · only folders you name</div>
+  </div>
+  <div class="pillar"><h3>chronovault-steward</h3>
+    <ol><li><b>Inventory</b> — SHA-256, duplicates, skip unchanged</li>
+    <li><b>Extract</b> — fields + verbatim evidence</li>
+    <li><b>Rank & save</b> — action date math + digest</li></ol>
+  </div>
+  <div class="card"><h3>UGOS experts</h3>
+    <div>file-agent <span class="tag">read</span><div style="font-size:12px;color:#64748b">ug-filesystem · ug-filemgr</div></div>
+    <div style="margin-top:8px">document-agent <span class="tag">read</span><div style="font-size:12px;color:#64748b">ug-document extract</div></div>
+    <div style="margin-top:8px">photo-agent <span class="tag">read</span><div style="font-size:12px;color:#64748b">ug-photo vision-ocr</div></div>
+    <div style="margin-top:8px">knowledge-agent <span class="tag appr">approval</span><div style="font-size:12px;color:#64748b">ug-knowledge save-text</div></div>
+  </div>
+  <div class="card"><h3>Outputs</h3><ul>
+    <li><b>Action Digest</b> — Markdown + ledger</li>
+    <li><b>Needs Review</b> — no guessing</li>
+    <li><b>Deadline math</b> — Renews 15 Dec − 30d = act by 15 Nov 2026</li>
+    <li><b>Optional tags</b> — ChronoVault-Due-30d</li></ul>
+  </div>
+</div></div>
+<div class="feats">
+  <span>Originals never moved</span><span>No external API</span>
+  <span>Incremental by SHA-256</span><span>Account numbers masked</span>
+</div>
+</div></body></html>

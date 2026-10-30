@@ -1,0 +1,5 @@
+# Optional: regenerate gallery screenshots and the demo video
+playwright>=1.45   # then: python -m playwright install chromium
+piper-tts>=1.2     # offline TTS; voice: en_US-ljspeech-high (LJ Speech dataset, public domain)
+numpy>=1.26
+# ffmpeg with libx264 and libass must be on PATH
